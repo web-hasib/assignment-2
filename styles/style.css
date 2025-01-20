@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+/* shared styles */
+.flex{
+    display: flex;
+}
+.btn-primary{
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 9px;
+    border: none;
+}
+
+
+
+
+/* Navbar releted styles  */
+#hr-1{
+    visibility: hidden;
+}
+.nav-container{
+    max-height: 62px;
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: 20px auto;
+    justify-content: space-between ;
+    align-items: center;
+
+}
+.nav-container-1{
+   
+    /* justify-items: space-between ; */
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-container-1 .nav-logo{
+    height: 100%;
+}
+.nav-container-1 .nav-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-container-2{
+    /* justify-content: space-between ; */
+    gap: 15px;
+}
+
+.nav-link a{
+    /* color: red; */
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px;
+
+}
+.nav-1 a{
+    color: orange;
+}
+.nav-2 a{
+    color: rgba(130, 207, 238, 0.945);
+}
+.nav-3 a{
+    color: rgba(5, 212, 223, 1);
+}
+.nav-4 a{
+    color: rgba(93, 88, 239, 1);
+}
+
+
+.nav-container-3{
+    /* justify-content: space-between ; */
+    /* margin-right: 20px; */
+}
+.btn-1{
+    background-color: Orange;
+}
+
+
+
+
+
+/* responsive for mobile  */
+
+
+@media only screen and (max-width: 576px) {
+    /* navbar releted style  */
+    .nav-container{
+        width: 94%;
+        flex-direction: column;
+        
+    }
+    .nav-container-1{
+        /* justify-items: space-between ; */
+        flex-direction: column;
+        gap: 5px;
+    }
+    .nav-container-2{
+        /* justify-content: space-between ; */
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-container-3{
+        gap: 30px;
+    }
+    #hr-1{
+        height: 1px;
+        border: none;
+        background-color: rgba(240, 160, 63, 0.411);
+        visibility: visible;
+    }
+}
