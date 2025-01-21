@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 .quicksand-font {
@@ -7,19 +8,39 @@
     font-weight: 400;
     font-style: normal;
   }
-
+  .raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 
 /* shared styles */
 .flex{
     display: flex;
 }
+.grid{
+    display: grid;
+}
 .btn-primary{
     padding: 10px 30px;
     font-size: 1.25rem;
     font-weight: 700;
     color: white;
-    border-radius: 9px;
+    border-radius: 18px;
+    border: none;
+}
+.btn-secondary{
+    padding: 10px 30px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 25px;
     border: none;
 }
 
@@ -109,10 +130,12 @@
 .hero-title{
     font-size: 3.5rem;
     font-weight: bold;
+    margin: 40px 0;
 }
 .hero-description{
     font-size: 1.25rem;
     color: rgba(0, 0, 0, 0.603);
+    margin-bottom: 50px;
 
 }
 .btn-2{
@@ -123,7 +146,9 @@
 
 /* main  */
 main{
-    background-image: url('../assets/bg.png');
+    /* background-image: url('../assets/bg.png'); */
+    background-image: url('../assets/bg.png'), linear-gradient(0deg, #eba12056, #FFFFFF);
+    /* background: linear-gradient(0deg, #FEA301, #FFFFFF); */
 
 }
 
@@ -134,7 +159,7 @@ main{
 .curriculum-title-x{
     font-size: 2.8rem;
     font-weight: bold;
-    margin: 30px;
+    margin: 80px;
 }
 .curriculum-container{
     display: flex;
@@ -193,12 +218,103 @@ main{
     display: flex;
     height: 40px;
     width: 20%;
-    margin: 20px auto;
+    margin: 50px auto;
+    margin-bottom: 70px;
+    height: 70px;
 }
 .arrow-left img, .arrow-right img{
     width: 50%;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+    margin-top: 40px;
 }
+
+/* Story section releted styles  */
+.story-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 200px;
+
+}
+.story-container{
+    width: 80%;
+    margin: 70px auto 0px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding-bottom: 70px;
+
+}
+
+.story-box{
+    /* border: 1px solid black; */
+    flex-direction: column;
+   border-radius: 20px;
+   background-color: white;
+   
+
+    
+    
+}
+.story-box img{
+    height: auto;
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+}
+.story-box .story-btn-x{
+    margin-left: 25px;
+    max-width:200px ;
+    margin-top: -20px;
+}
+.story-x-title{
+    margin-top: 40px;
+    margin-bottom: 5px;
+    padding: 25px;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+}
+.story-1{
+    grid-row: span 2;
+    grid-column: span 2;
+
+
+}
+.story-1 > .story-x-title{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-right: 60px;
+}
+.story-1 > .story-x-description{
+    font-size: 1.3rem;
+    padding-right: 50px;
+    padding-left: 25px;
+    color: rgba(0, 0, 0, 0.507);
+
+}
+.story-btn-1{
+    background-color: #3CD8E8;
+}
+.story-btn-2{
+    background-color: #95B226;
+}
+.story-btn-3{
+    background-color: #5D58F0;
+}
+.story-btn-4{
+    background-color: #95B226;
+}
+.story-btn-5{
+    background-color: #95B226;
+
+}
+.view-btn-container{
+    text-align: center;
+    padding-bottom:40px;
+}
+.view-btn{
+    background-color: black;
+}
+
 
 
 
@@ -243,9 +359,11 @@ main{
     }
     .hero-title{
         font-size: 2rem;
+        margin-top: 30px;
     }
     .hero-description{
         font-size: 1rem;
+        padding: 30px 5px 5px;
     }
     .btn-2{
         margin-top: 30px;
@@ -272,4 +390,48 @@ main{
     .arrow-container{
         display: none;
     }
+    .more{
+        padding-bottom: 30px;
+    }
+    /* Story section releted styles */
+    .story-container{
+        grid-template-columns: repeat(2, 1fr);
+        width: 94%;
+        gap: 10px;
+        padding-bottom: 40px;
+    }
+    .story-1{
+        display: none ;
+    }
+    .story-box{
+        /* border: 1px solid black; */
+        flex-direction: column;
+       border-radius: 20px;
+       background-color: white;
+        
+    }
+    .story-box img{
+        height: auto;
+        width: 100%;
+        border-radius: 20px 20px 0 0 ;
+    }
+    .story-box .story-btn-x{
+        margin-left: 13px;
+        max-width:100px ;
+        font-size: 50%;
+        margin-top: -16px;
+        padding: 7px 5px;
+    }
+    .story-x-title{
+        margin-top: 2px;
+        margin-bottom: 10px;
+        padding: 14px;
+        font-size: .6rem;
+        font-weight: bold;
+    }  
+    .story-title{
+        margin-top: 60px;
+    }
+
+   
 }
