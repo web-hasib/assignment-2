@@ -48,6 +48,7 @@
 
 
 /* Navbar releted styles  */
+
 #hr-1{
     visibility: hidden;
 }
@@ -366,6 +367,11 @@ footer{
     align-items: center;
     
 }
+.brand-container img{
+    width: 50px;
+    height: auto;
+    margin-right: 8px;
+}
 .footer-title{
     color: white;
     font-size: 1.6rem;
@@ -420,6 +426,9 @@ footer{
 
 @media only screen and (max-width: 576px) {
     /* navbar releted style  */
+    .navbar{
+        margin-top: 10px;
+    }
     .nav-container{
         /* visibility: hidden; */
         display: none;
